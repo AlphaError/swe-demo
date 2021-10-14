@@ -10,3 +10,4 @@ class EndpointTestCase(TestCase):
         pass
     def test_hellp(self):
         self.assertTrue(False)
+        self.assertIn(ep.HELLO, ret)

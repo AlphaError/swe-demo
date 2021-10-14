@@ -1,14 +1,17 @@
-# Class Demo
+# Kora's Demo
 
 ## Requirements
 
-- Show the class how to get going.
-- Help them out!
+- Test software engineering strategies
+- Make test templates for overall class project
 
 ## Design
 
 - Use flask-api as template.
-- Walk through each step.
+
+### Specifications
+
+- made within E. Callahan's Software Engineering Course at NYU Tandon: CS-UY 4513-C 
 
 
 
