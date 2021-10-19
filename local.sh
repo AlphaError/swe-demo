@@ -6,7 +6,7 @@ if [ $ANUBIS]  # export "ANUBIS=" in bash to rewrite
 then
     Host = 0.0.0.0
 fi
-
+flask
 # run our server locally:
 PYTHONPATH=$(pwd):$PYTHONPATH
 FLASK_APP=API.endpoints flask run --host=$HOST --port=$PORT

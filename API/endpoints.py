@@ -12,7 +12,8 @@ app = Flask(__name__)
 api = Api(app)
 
 HELLO = 'hola'
-WORLD = 'mundo
+WORLD = 'mundo'
+
 
 @api.route('/hello')
 class HelloWorld(Resource):
@@ -25,7 +26,7 @@ class HelloWorld(Resource):
         A trivial endpoint to see if the server is running.
         It just answers with "hello world."
         """
-        return {HELLO : WORLD}
+        return {HELLO: WORLD}
 
 
 @api.route('/endpoints')
@@ -52,3 +53,16 @@ class Pets(Resource):
         This method returns all pets.
         """
         return db.fetch_pets()
+
+
+@api.route('/create_user/<username>')
+class CreateUser(Resource):
+    """
+    This class supports adding a user to the chat room.
+    """
+    @api.response(HTTPStatus.OK, 'Success')
+    def post(self, username):
+        """
+        This method adds a user to the chatroom.
+        """
+        return username
