@@ -1,10 +1,10 @@
 #!/bin/bash
 
-HOST = 127.0.0.1
-PORT = 8000
+HOST=127.0.0.1
+PORT=8000
 if [ $ANUBIS]  # export "ANUBIS=" in bash to rewrite
 then
-    Host = 0.0.0.0
+    HOST=0.0.0.0
 fi
 flask
 # run our server locally:
